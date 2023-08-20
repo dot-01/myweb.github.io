@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        div {
+            text-align: center;
+          margin-top: 10%;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body id="b">
+<div>
+    <img id="ioo" src="lastlampoff.png" width="300px" alt="">
+    <br><br>
+    <img src="butt-removebg-preview.png" width="300px" alt="" usemap="#btt">
+    <map name="btt">
+        <area shape="circle" coords="140,70,60" href="#" onclick="f()" alt="on">
+    </map>
+    <h1 id="w">OFF</h1>
+</div>
+</body>
+</html>
+<script>
+    let a = 0;
+    
+    function f() {
+        let image = document.getElementById("ioo");
+        let word = document.getElementById("w");
+        let bo = document.getElementById("b");
+        if (a % 2 === 0) {
+            image.src = "lastlampon.png"; 
+            w.innerHTML = "ON"
+            bo.style.backgroundImage = "url('1.png')"
+        } 
+        else 
+        {
+            image.src = "lastlampoff.png"; 
+            w.innerHTML = "OFF"
+            bo.style.backgroundImage = "url('')"
+        }
+        a++;
+    }
+</script>
